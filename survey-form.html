@@ -7,48 +7,127 @@
     
     <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-      <main id="main">
+        <main id="main">
         <h1 id="title">FCC Project: Survey Form</h1>
-          <p id="description">This is a short description placeholder in order to complete the FCC survey form project</p>
-        <section>
-          <form id="survey-form">
-              <div class="form-group">
-                <label id="name-label" for="name">Name</label>
-                <input
-                type="text"
-                name="name"
-                id="name"
-                class="form-control"
-                placeholder="Enter your name"
-                required
-                />
-            </div>
-            <div class="form-group">
-                <label id="email-label" for="email">Email</label>
-                <input
-                type="email"
-                name="email"
-                id="email"
-                class="form-control"
-                placeholder="Enter your email"
-                required
-                />
-            </div>
-            <div class="form-group">
-                <label id="number-label" for="number">Age</label>
-                <input
-                type="number"
-                name="number"
-                min="18"
-                max="100"
-                id="number"
-                class="form-control"
-                placeholder="Enter your age"
-                required
-                />
-            </div>
-          </form>
-        </section>
-      </main>
+        <p id="description">This is a short description placeholder in order to complete the FCC survey form project</p>
+            <section>
+                <form id="survey-form">
+                    <div class="form-group">
+                        <label id="name-label" for="name">Name</label>
+                        <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name"
+                        required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label id="email-label" for="email">Email</label>
+                        <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your email"
+                        required
+                        />
+                    </div>
+                    <div class="form-group">
+                        <label id="number-label" for="number">Age</label>
+                        <input
+                        type="number"
+                        name="number"
+                        min="18"
+                        max="100"
+                        id="number"
+                        class="form-control"
+                        placeholder="Enter your age"
+                        required
+                        />
+                    </div>
+                    <!--Dropdown Section-->
+                    <div class="form-group">
+                    <p>How did you hear about us?</p>
+                        <select id="dropdown" name="role" class="form-control" required>
+                            <option disabled selected value>Please choose from the below?</option>
+                            <option value="google">Google</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="newspaper">Newspaper</option>
+                            <option value="referral">Referral</option>
+                            <option value="other">Other</option>
+                            <option value="prefernot">Prefer Not To Say</option>
+                        </select>
+                    </div>
+                    <!--Radio Section-->
+                    <div class="form-group">
+                    <p>This is a radio button area</p>
+                        <label>
+                            <input
+                                name="radio-button"
+                                value="button1"
+                                type="radio"
+                                class="input-radio"
+                                checked
+                                />Radio 1
+                        </label>
+                        <label>
+                            <input
+                                name="radio-button"
+                                value="button2"
+                                type="radio"
+                                class="input-radio"
+                                />Radio 2
+                        </label>
+                    </div>
+                    <!--Checkbox Section-->
+                    <div class="form-group">
+                    <p>Why did you visit this page? <span class="clue">(Please tick all that apply)</span></p>
+                        <label>
+                            <input
+                                name="visit"
+                                value="education"
+                                type="checkbox"
+                                class="input-checkbox"
+                                checked
+                                />Education
+                        </label> 
+                        <label>
+                            <input
+                                name="visit"
+                                value="hobby"
+                                type="checkbox"
+                                class="input-checkbox"
+                                />Hobby
+                        </label>
+                        <label>
+                            <input
+                                name="visit"
+                                value="customer"
+                                type="checkbox"
+                                class="input-checkbox"
+                                />Customer
+                        </label> 
+                    </div>
+                    <!--Textarea Section-->
+                    <div class="form-group">
+                    <p>Please add any additional comments</p>
+                        <textarea
+                            id="comments"
+                            class="input-textarea"
+                            name="comment"
+                            placeholder="Enter your comments here"
+                            ></textarea>
+                    </div>
+                    <!--Submit Button Section-->
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="submit-button">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
     </body>
 </html>
