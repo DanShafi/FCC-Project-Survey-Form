@@ -1,168 +1,197 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>FCC: Survey Form</title>
-</head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>FCC: Survey Form</title>
+    </head>
 
-<body>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<main id="main">
-    <h1 id="title">FCC Project: Survey Form</h1>
-    <p id="description">This is a short description placeholder in order to complete the FCC survey form project</p>
-    <div class="row no-gutters">
-        
-<!--LEFT SIDE OF PAGE BEGINS HERE-->
-        <div class="col no-gutters">
-            <div class="leftside">
-                <h1>LEFTSIDE</h1>
+        <div class="container nav-container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="#">
+                <img src="https://11tcma2eyqgmz6zyt1x6na8n-wpengine.netdna-ssl.com/wp-content/uploads/2018/06/ShipBob-Feature-Logo-2020.png" height="130px" class="d-inline-block align-top" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Can we help?" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
             </div>
+            </nav>
         </div>
-        
-<!--RIGHT SIDE OF PAGE BEGINS HERE-->
-        <div class="col no-gutters">
-            <div class="rightside">
-                <h1>RIGHTSIDE</h1>
-                    <div class="container w-75">             
-                        <form id="survey-form">
-                            <div class="form-group">
-                                <label id="name-label" for="name">Name</label>
-                                <input
-                                type="text"
-                                name="name"
-                                id="name"
-                                class="form-control"
-                                placeholder="Enter your name"
-                                required
-                                />
-                            </div>
-                            
-                            <div class="form-group">
-                                <label id="email-label" for="email">Email</label>   
-                                <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                class="form-control"
-                                placeholder="Enter your email"
-                                required
-                                />
-                                <small 
-                                id="emailHelp" 
-                                class="form-text text-muted"
-                                >We'll never share your email with anyone else.
-                            </small>
-                            
-                        </div>
-                        <div class="form-group">
-                            <label id="number-label" for="number">Age</label>
-                            <input
-                            type="number"
-                            name="number"
-                            min="18"
-                            max="100"
-                            id="number"
-                            class="form-control"
-                            placeholder="Enter your age"
-                            required
-                            />
-                        </div>
-                        
-                        <!--Dropdown Section-->
-                        
-                        <div class="form-group">
-                            <p>How did you hear about us?</p>
-                            <select id="dropdown" name="role" class="form-control" required>
-                                <option disabled selected value>Please choose from the below?</option>
-                                <option value="google">Google</option>
-                                <option value="facebook">Facebook</option>
-                                <option value="newspaper">Newspaper</option>
-                                <option value="referral">Referral</option>
-                                <option value="other">Other</option>
-                                <option value="prefernot">Prefer Not To Say</option>
-                            </select>
-                        </div>
-                        
-                        <!--Radio Section-->
-                        
-                        <div class="form-group">
-                            <p>This is a radio button area</p>
-                            <label>
-                                <input
-                                name="radio-button"
-                                value="button1"
-                                type="radio"
-                                class="input-radio"
-                                checked
-                                />Radio 1
-                            </label>
-                            <label>
-                                <input
-                                name="radio-button"
-                                value="button2"
-                                type="radio"
-                                class="input-radio"
-                                />Radio 2
-                            </label>
-                        </div>
-                        
-                        <!--Checkbox Section-->
-                        
-                        <div class="form-group">
-                            <p>Why did you visit this page? <span class="clue">(Please tick all that apply)</span></p>
-                            <label>
-                                <input
-                                name="visit"
-                                value="education"
-                                type="checkbox"
-                                class="input-checkbox"
-                                checked
-                                />Education
-                            </label> 
-                            <label>
-                                <input
-                                name="visit"
-                                value="hobby"
-                                type="checkbox"
-                                class="input-checkbox"
-                                />Hobby
-                            </label>
-                            <label>
-                                <input
-                                name="visit"
-                                value="customer"
-                                type="checkbox"
-                                class="input-checkbox"
-                                />Customer
-                            </label> 
-                        </div>
-                        
-                        <!--Textarea Section-->
-                        
-                        <div class="form-group">
-                            <p>Please add any additional comments</p>
-                            <textarea
-                            id="comments"
-                            class="input-textarea"
-                            name="comment"
-                            placeholder="Enter your comments here"
-                            ></textarea>
-                        </div>
-                        
-                        <!--Submit Button Section-->
-                        
-                        <div class="form-group">
-                            <button type="submit" id="submit" class="submit-button">
-                                Submit
-                            </button>
-                        </div>
-                    </form>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 id="title" class="main-quote">
+                    Impress your clients,
+                    <br>
+                    retain more business.
+                    </h1>
+                    <br>
+                    <p id="description" class="blue-text">
+                    ShipBob's smart analytics tool can help
+                    bring real-time programmatic results
+                    in a ready-to-deploy dashboard for your clients.
+                    </p>
+                    <br>
+                    <p>
+                    We will never share your e-mail address with
+                    anyone else, nor do we sell your data to other
+                    companies.
+                    </p>
+                </div>
+
+                <div class="col survey-form">
+                    <form id="survey-form">
+                    <div class="form-group">
+                    <label id="name-label" for="name">Full Name</label>
+                    <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="form-control"
+                    placeholder="Elon Musk"
+                    required
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label>   
+                    <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-control"
+                    placeholder="elon@musk.com"
+                    required
+                    />
+                    <small 
+                    id="emailHelp" 
+                    class="form-text text-muted"
+                    >We'll never share your email with anyone else.
+                    </small>
+                </div>
+
+                <div class="form-group">
+                    <label id="number-label" for="number">Number of Employees</label>
+                    <input
+                    type="number"
+                    name="number"
+                    min="1"
+                    max="1000"
+                    id="number"
+                    class="form-control"
+                    placeholder="Enter the number of employees (1 - 1000+)"
+                    required
+                    />
+                </div>
+
+                <!-- Radio Section -->
+
+                <div class="form-group">
+                    <p>Do you wish to use ShipBob for business or enterprise?</p>
+                    <label>
+                    <input
+                    name="radio-button"
+                    value="button1"
+                    type="radio"
+                    class="input-radio"
+                    checked
+                    />Business
+                    </label>
+                    <label>
+                    <input
+                    name="radio-button"
+                    value="button2"
+                    type="radio"
+                    class="input-radio"
+                    />Enterprise
+                    </label>
+                </div>
+
+                <!--Dropdown Section-->
+
+                <div class="form-group">
+                    <p>How did you hear about us?</p>
+                    <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Please choose from the below?</option>
+                        <option value="google">Google</option>
+                        <option value="facebook">Facebook</option>
+                        <option value="newspaper">Newspaper</option>
+                        <option value="referral">Referral</option>
+                        <option value="other">Other</option>
+                        <option value="prefernot">Prefer Not To Say</option>
+                    </select>
+                </div>
+
+
+                <!--Checkbox Section-->
+
+                <div class="form-group">
+                    <p>Would type of service would you require? <span class="clue">(Please tick all that apply)</span></p>
+                    <label>
+                    <input
+                    name="visit"
+                    value="education"
+                    type="checkbox"
+                    class="input-checkbox"
+                    checked
+                    />Managed
+                    </label> 
+                    <label>
+                    <input
+                    name="visit"
+                    value="hobby"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Self-Serve
+                    </label>
+                    <label>
+                    <input
+                    name="visit"
+                    value="customer"
+                    type="checkbox"
+                    class="input-checkbox"
+                    />Automated
+                    </label> 
+                </div>
+
+                <hr>
+                <!--Textarea Section-->
+
+                <div class="form-group">
+                    <p>Let us know what your next project is and how we can help:</p>
+                    <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="Our next project is..."
+                    ></textarea>
+                </div>
+
+                <!--Submit Button Section-->
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                    Submit
+                    </button>
                 </div>
             </div>
         </div>
-    </div>
-</main>
-</body>
+    </body>
 </html>
